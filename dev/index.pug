@@ -1,0 +1,27 @@
+//- extends layout/main
+
+block variables
+    -var page_Title = 'InkHouse'
+
+doctype html 
+html(lang="ru") 
+    head 
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet" type="text/css" href="./styles/styles.css")
+        title= page_Title
+
+    body
+        header.page_header
+            include ./modules/header
+        main.page_main
+            include ./modules/hero
+            include ./modules/filter
+            include ./modules/catalog 
+            //- в каталог пока добавила только картины Франции -> уточнить
+            include ./modules/promo
+            include ./modules/about_us
+        footer.page_footer
+            include ./modules/page_footer__contact
+            include ./modules/page_footer__nav
+            include ./modules/page_footer__social
