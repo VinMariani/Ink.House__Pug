@@ -10,13 +10,12 @@ gulp.task('pug', function() {
 
 
 gulp.task('watch', function(){
-    gulp.watch('dev/modules/*.pug', gulp.parallel('pug'));
+    gulp.watch('dev/layouts/*.pug', gulp.parallel('pug'));
 });
 
 
 gulp.task('watch_all', function(){
     gulp.watch('dev/*.pug', gulp.parallel('pug'));
 });
-
 
 gulp.task('default', gulp.parallel('watch', 'watch_all'));

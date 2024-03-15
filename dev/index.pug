@@ -13,14 +13,14 @@ html(lang="ru")
 
     body
         header.page_header
-            include ./modules/header
+            include ./layouts/header
         main.page_main
             include ./modules/hero
             include ./modules/filter
             include ./modules/catalog 
-            //- в каталог пока добавила только картины Франции -> уточнить
             include ./modules/promo
             include ./modules/about_us
         footer.page_footer
             include ./modules/page_footer__contact
             include ./modules/page_footer__nav
+            include ./modules/page_footer__social
