@@ -112,6 +112,8 @@ main {
     font-weight: 500;
     line-height: 24px;
     text-decoration: none;
+    list-style: none;
+    padding: 0;
 }
 
 .page_header__nav_link:hover {
