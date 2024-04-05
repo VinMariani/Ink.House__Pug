@@ -1,4 +1,3 @@
-// загрузка плагинов
 let gulp = require('gulp'),
     pug = require('gulp-pug'); // конвертация паг в хтмл
 // const cssnano = require('gulp-cssnano');

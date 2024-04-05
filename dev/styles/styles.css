@@ -72,6 +72,7 @@ main {
 .page_header {
     background-color: rgba(225, 237, 230, 1);
     min-height: 100px;
+    max-width: 1440px;
     display: flex;
     gap: 497px;
     justify-content: center;

@@ -2,10 +2,11 @@ include ../mixins/mixins.pug
 .page_header__logo_wrapper
     a.page_header__link(href="#")
         img.page_header__img(src="./images/icons/logo.svg" alt="Логотип Инк Хаус")
-    a.page_header__name(href="#") 
+    a.page_header__name(href="#")
         span Ink.House
-+header_nav( [ {href: '#', text: 'Репродукции'}, 
-                {href: '#', text: 'Новинки'}, 
-                {href: '#', text: 'О нас'} ] )
-a.page_header__nav_link.page_header__nav_link--cart(href="#")
-    span.visually-hidden Корзина
+nav.page_header__nav
+    +header_nav( [ {href: '#', text: 'Репродукции'}, 
+                    {href: '#', text: 'Новинки'}, 
+                    {href: '#', text: 'О нас'} ] )
+    a.page_header__nav_link.page_header__nav_link--cart(href="#")
+        span.visually-hidden Корзина
